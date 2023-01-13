@@ -1,0 +1,25 @@
+{
+  "name": "music-list",
+  "version": "1.0.0",
+  "description": "A simple tool for live-streamer, who could check his/her music list ordered by audiences, and re-organized the music list.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hengyu89/Music-List.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hengyu89/Music-List/issues"
+  },
+  "homepage": "https://github.com/hengyu89/Music-List#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  }
+}
