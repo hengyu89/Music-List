@@ -1,4 +1,10 @@
 
+/* 整体 */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+
 /* 歌单的歌名排版（横向） */
 #one-word-list {
     width: 10%; /* 让每个li元素占据父元素宽度的50% */

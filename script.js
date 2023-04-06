@@ -124,8 +124,11 @@ function getShuffleMusic() {
 
     // 得到用户想要的歌曲顺序
     let songIndex = shuffleText.value.trim();
-    if(!songIndex || songIndex > randomMusicList.length-1) {
-      songIndex = 0
+    songIndex -= 1;
+    if(songIndex<0 || songIndex > randomMusicList.length-1) {
+      songIndex = 0;
+      songIndex = Math.floor(Math.random() * randomMusicList.length);
+      console.log('第 ', songIndex, " 首歌")
     }
 
     // // 找到这首歌且把这首歌从列表里删除
@@ -180,7 +183,7 @@ function getShuffleMusic() {
 // 点一下「出！」按钮，得到这个位置的歌
 shuffleGetMusic.addEventListener('click', function() {
   getShuffleMusic();
-  console.log('试试')
+  // console.log('试试')
 })
 // 点一下「打乱」按钮，顺序打乱
 shuffleButton.addEventListener('click', function() {
