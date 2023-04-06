@@ -29,15 +29,17 @@
     <div class="row">
       <!-- Use col-* classes for different column sizes on different screens -->
       <div class="col-12 col-md-8 col-xl-9">
-        <h3>歌单修改器</h3>
+        <h3>歌单修改器</h3> 
+        <button id="store-to-local">第一次来必按一下这个！</button> <br>
         <h5>这玩意对咱没用的（小声），主要是方便哇啦加点歌儿呀、随即一首歌出来弹唱这样~</h5>
-        <input type="text" id="add-song-input" placeholder="请输入歌名">
-        <button id="add-song-button">添加歌曲</button> <br><br>
-        <button id="remove-song-button">删除歌曲</button>
-        <button id="shuffle-button">随机排序</button>
-        <button id="store-to-local">添加歌单到浏览器</button>
         <button id="download-to-local">下载新歌单</button>
-        <button id="refresh-list">刷新列表！</button>
+        <button id="refresh-list">刷新列表！</button> <br><br>
+        <input type="text" id="add-song-input" placeholder="请输入歌名">
+        <button id="add-song-button">添加歌曲</button> 
+        <button id="remove-song-button">删除歌曲</button> <br><br>
+        <h4>随机一首歌~</h4>
+        <input type="number" id="shuffleID" placeholder="输入一个数字(1~531)">
+        <button id="shuffle-button">随机一曲</button>  <br><br>
         <div id="message"></div>
         <ul id="song-list"></ul>
         <p>ummmmm,开心就好！🎵</p>
@@ -68,7 +70,7 @@
     <div class="row">
       <div class="col-12 col-md-6 col-lg-3">
         <h3>壹字</h3>
-        <h5>希望未来的你</h5>
+        <!-- <h5>希望未来的你</h5> -->
         <br>
         <ul class="one-char-list"></ul>
         <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat perspiciatis, debitis a perferendis error
@@ -77,7 +79,7 @@
       </div>
       <div class="col-12 col-md-6 col-lg-3">
         <h3>贰字</h3>
-        <h5>什么都不怕</h5>
+        <!-- <h5>什么都不怕</h5> -->
         <br>
         <ul class="two-char-list"></ul>
         <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat perspiciatis, debitis a perferendis error
@@ -86,7 +88,7 @@
       </div>
       <div class="col-12 col-md-6 col-lg-3">
         <h3>仨字</h3>
-        <h5>哪怕寒冬和炎夏</h5>
+        <!-- <h5>哪怕寒冬和炎夏</h5> -->
         <br>
         <ul class="three-char-list"></ul>
         <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat perspiciatis, debitis a perferendis error
@@ -95,7 +97,7 @@
       </div>
       <div class="col-12 col-md-6 col-lg-3">
         <h3>肆字</h3>
-        <h5>也会有我的鼓励而开心</h5>
+        <!-- <h5>也会有我的鼓励而开心</h5> -->
         <br>
         <ul class="four-char-list"></ul>
         <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat perspiciatis, debitis a perferendis error
@@ -110,7 +112,7 @@
       <div class="row">
         <div class="col-12 col-md-6 col-lg-3">
           <h3>伍字</h3>
-          <h5>不论如何</h5>
+          <!-- <h5>不论如何</h5> -->
           <br>
           <ul class="five-char-list"></ul>
           <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat perspiciatis, debitis a perferendis error
@@ -119,7 +121,7 @@
         </div>
         <div class="col-12 col-md-6 col-lg-3">
           <h3>陆字</h3>
-          <h5>看到这个的你</h5>
+          <!-- <h5>看到这个的你</h5> -->
           <br>
           <ul class="six-char-list"></ul>
           <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat perspiciatis, debitis a perferendis error
@@ -128,7 +130,7 @@
         </div>
         <div class="col-12 col-md-6 col-lg-3">
           <h3>柒字</h3>
-          <h5>一定要开心呀！</h5>
+          <!-- <h5>一定要开心呀！</h5> -->
           <br>
           <ul class="seven-char-list"></ul>
           <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat perspiciatis, debitis a perferendis error
@@ -137,7 +139,7 @@
         </div>
         <div class="col-12 col-md-6 col-lg-3">
           <h3>捌字</h3>
-          <h5>有效期：超久~</h5>
+          <!-- <h5>有效期：超久~</h5> -->
           <br>
           <ul class="eight-char-list"></ul>
           <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat perspiciatis, debitis a perferendis error

@@ -8,7 +8,7 @@ var fiveCharList = document.querySelector('.five-char-list');
 var sixCharList = document.querySelector('.six-char-list');
 var sevenCharList = document.querySelector('.seven-char-list');
 var eightCharList = document.querySelector('.eight-char-list');
-console.log(songList);
+
 // 遍历歌曲列表，将歌曲按照长度分类添加到相应的列表中
 songList.forEach(function(song) {
     // 获取歌曲长度
@@ -60,12 +60,10 @@ function refreshList() {
     eightCharList.innerHTML = '';
 
     var musicList = JSON.parse(localStorage.getItem('MyMusicList')) || [];
-    console.log(musicList);
     musicList.forEach(function(song) {
         // 获取歌曲长度
         var len = song.length;
         
-
         // 根据歌曲长度添加到相应的列表中
         switch (len) {
             case 1:

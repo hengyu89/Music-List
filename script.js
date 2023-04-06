@@ -3,6 +3,7 @@ var addSongInput = document.getElementById('add-song-input');
 var addSongButton = document.getElementById('add-song-button');
 var removeSongButton = document.getElementById('remove-song-button');
 var shuffleButton = document.getElementById('shuffle-button');
+var shuffleIndex = document.getElementById('shuffleID');
 var storeLocalButton = document.getElementById('store-to-local');
 var downloadButton = document.getElementById('download-to-local');
 var message = document.getElementById('message');
@@ -92,14 +93,30 @@ function updateSongList() {
 // 随机打乱歌曲列表 
 //                  TODO
 function shuffleSongs() {
-    songs.sort(function() {
-        return 0.5 - Math.random();
-    });
-    // 更新歌曲列表显示
-    updateSongList();
+
+    // 取出随即列表，打乱顺序
+    let randomMusicList = JSON.parse(localStorage.getItem('shufferList')) || [];
+    randomMusicList.sort(() => Math.random() - 0.5);
+
+    // 得到用户想要的歌曲顺序
+    let songIndex = shuffleIndex.value.trim();
+    if(!songIndex || songIndex > randomMusicList.length-1) {
+      songIndex = 0
+    }
+
+    // 找到这首歌且把这首歌从列表里删除
+    let goalMusic = randomMusicList[songIndex];
+    randomMusicList.splice(songIndex,1);
+
+    // 刷新数字框的数字
+    let listLength = randomMusicList.length;
+    const shuffleInput = document.getElementById("shuffleID").placeholder = `输入一个数字(1~${listLength-1})`
+
     // 更新 list.js 文件中的歌曲列表
-    list.setItems(songs);
-    message.innerHTML = '';
+    message.innerHTML = `你随机到了「${goalMusic}」，唱的开心嗷！`;
+
+    localStorage.setItem('shufferList', JSON.stringify(randomMusicList));
+
 }
 
 // TODO ↓
