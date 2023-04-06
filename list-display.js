@@ -48,7 +48,7 @@ songList.forEach(function(song) {
         //     otherCharList.innerHTML += "<li id='other-word-list'>" + song + '</li>';
         //     break;
         default:
-            console.log(song);
+            // console.log(song);
             otherCharList.innerHTML += "<li id='other-word-list'>" + song + '</li>';
             break;
     }
