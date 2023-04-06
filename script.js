@@ -141,6 +141,7 @@ function getShuffleMusic() {
 
     // 歌单放回localStorage
     localStorage.setItem('shufferList', JSON.stringify(randomMusicList));
+    shuffleText.value = "";
 }
 
 
