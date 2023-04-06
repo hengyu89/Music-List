@@ -1,0 +1,47 @@
+#one-word-list {
+    width: 10%; /* 让每个li元素占据父元素宽度的50% */
+    display: inline-block; /* 让li元素以块级元素的形式水平排列 */
+    box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+  }
+
+#two-word-list {
+    width: 20%; /* 让每个li元素占据父元素宽度的50% */
+    display: inline-block; /* 让li元素以块级元素的形式水平排列 */
+    box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+  }
+
+#three-word-list {
+    width: 33%; /* 让每个li元素占据父元素宽度的50% */
+    display: inline-block; /* 让li元素以块级元素的形式水平排列 */
+    box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+}
+
+#four-word-list {
+    width: 50%; /* 让每个li元素占据父元素宽度的50% */
+    display: inline-block; /* 让li元素以块级元素的形式水平排列 */
+    box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+}
+
+#five-word-list {
+    width: 50%; /* 让每个li元素占据父元素宽度的50% */
+    display: inline-block; /* 让li元素以块级元素的形式水平排列 */
+    box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+}
+
+#six-word-list {
+    width: 50%; /* 让每个li元素占据父元素宽度的50% */
+    display: inline-block; /* 让li元素以块级元素的形式水平排列 */
+    box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+}
+
+#seven-word-list {
+    width: 100%; /* 让每个li元素占据父元素宽度的50% */
+    display: inline-block; /* 让li元素以块级元素的形式水平排列 */
+    box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+}
+
+#eight-word-list {
+    width: 100%; /* 让每个li元素占据父元素宽度的50% */
+    display: inline-block; /* 让li元素以块级元素的形式水平排列 */
+    box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+}
