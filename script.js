@@ -153,4 +153,11 @@ shuffleButton.addEventListener('click', function() {
     shuffleSongs();
 });
 
+// 先加载一次歌单到LocalStorage里去，省去开头手动
 loadMusicList();
+// 先更新随即列表里显示有多少歌
+function resetMusicLength() {
+  let musicList = JSON.parse(localStorage.getItem('shufferList')) || [];
+  let shuffleInput = document.getElementById("shuffleID").placeholder = `输入一个数字(1~${musicList.length})`
+}
+resetMusicLength()

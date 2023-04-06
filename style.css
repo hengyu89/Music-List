@@ -1,3 +1,8 @@
+.word-list {
+    padding-bottom: 10px;
+    font-size: large;
+}
+
 #one-word-list {
     width: 4%; /* 让每个li元素占据父元素宽度的50% */
     display: inline-block; /* 让li元素以块级元素的形式水平排列 */
@@ -46,6 +51,13 @@
     box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
 }
 
+#other-word-list {
+    width: 50%; /* 让每个li元素占据父元素宽度的50% */
+    display: inline-block; /* 让li元素以块级元素的形式水平排列 */
+    box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+}
+
+
 #message {
     font-size: smaller;
     color: red;
@@ -75,5 +87,8 @@
     }
     #eight-word-list {
         width: 43%;  /* 在屏幕宽度小于等于768px时，将宽度改为40% */
+    }
+    #other-word-list {
+        width: 30%;  /* 在屏幕宽度小于等于768px时，将宽度改为40% */
     }
 }
