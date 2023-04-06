@@ -128,8 +128,23 @@
     #eight-word-list {
         width: 43%;  /* 在屏幕宽度小于等于768px时，将宽度改为40% */
     }
-    #other-word-list {
-        width: 30%;  /* 在屏幕宽度小于等于768px时，将宽度改为40% */
+    #otherNine-word-list {
+        width: 50%;  /* 在屏幕宽度小于等于768px时，将宽度改为40% */
+    }
+    #otherTen-word-list {
+        width: 50%;  /* 在屏幕宽度小于等于768px时，将宽度改为40% */
+    }
+    #otherEleven-word-list {
+        width: 100%;  /* 在屏幕宽度小于等于768px时，将宽度改为40% */
+    }
+    #otherTwelve-word-list {
+        width: 100%;  /* 在屏幕宽度小于等于768px时，将宽度改为40% */
+    }
+    #otherThirteen-word-list {
+        width: 100%;  /* 在屏幕宽度小于等于768px时，将宽度改为40% */
+    }
+    #others-word-list {
+        width: 100%;  /* 在屏幕宽度小于等于768px时，将宽度改为40% */
     }
     .hyu-padding {
         padding-right: 0px;
