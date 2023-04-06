@@ -1,4 +1,5 @@
 // 获取四个分类列表
+var downloadButton = document.getElementById('refresh-list');
 var oneCharList = document.querySelector('.one-char-list');
 var twoCharList = document.querySelector('.two-char-list');
 var threeCharList = document.querySelector('.three-char-list');
