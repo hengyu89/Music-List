@@ -67,18 +67,18 @@ function loadMusicList() {
 }
 
 // 从localStorage把歌单下载到本地
-function downloadMusicList() {
-    let musicList = JSON.parse(localStorage.getItem('MyMusicList'));
-    if (!musicList) {
-      alert('歌单为空！');
-      return;
-    }
+// function downloadMusicList() {
+//     let musicList = JSON.parse(localStorage.getItem('MyMusicList'));
+//     if (!musicList) {
+//       alert('歌单为空！');
+//       return;
+//     }
   
-    let a = document.createElement('a');
-    a.href = URL.createObjectURL(new Blob([JSON.stringify(musicList)], {type: 'application/json'}));
-    a.download = 'MyMusicList.json';
-    a.click();
-}
+//     let a = document.createElement('a');
+//     a.href = URL.createObjectURL(new Blob([JSON.stringify(musicList)], {type: 'application/json'}));
+//     a.download = 'MyMusicList.txt';
+//     a.click();
+// }
 
 
 // 更新歌曲列表显示 TODO
@@ -166,9 +166,9 @@ function getShuffleMusic() {
 // });
 
 // 下载按钮, 从localStorage把歌单下载到本地
-downloadButton.addEventListener('click', function() {
-    downloadMusicList();
-})
+// downloadButton.addEventListener('click', function() {
+//     downloadMusicList();
+// })
 
 // 输入框按回车出发，   TODO    TODO
 // addSongInput.addEventListener('keydown', function(event) {
