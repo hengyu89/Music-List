@@ -150,20 +150,20 @@ function getShuffleMusic() {
 // TODO ↓
 
 // 添加歌曲按钮，加歌
-addSongButton.addEventListener('click', function() {
-    addMusic();
-});
+// addSongButton.addEventListener('click', function() {
+//     addMusic();
+// });
 
 // 删除歌曲按钮，删歌
-removeSongButton.addEventListener('click', function() {
-    removeMusic();
-});
+// removeSongButton.addEventListener('click', function() {
+//     removeMusic();
+// });
 
 // 添加到localStorage按钮, 把本地文件json的歌添加到localStorage
-storeLocalButton.addEventListener('click', function() {
-    loadMusicList();
-    alert('歌单加载成功！');
-});
+// storeLocalButton.addEventListener('click', function() {
+//     loadMusicList();
+//     alert('歌单加载成功！');
+// });
 
 // 下载按钮, 从localStorage把歌单下载到本地
 downloadButton.addEventListener('click', function() {
@@ -171,11 +171,11 @@ downloadButton.addEventListener('click', function() {
 })
 
 // 输入框按回车出发，   TODO    TODO
-addSongInput.addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-        addSong();
-    }
-});
+// addSongInput.addEventListener('keydown', function(event) {
+//     if (event.key === 'Enter') {
+//         addSong();
+//     }
+// });
 
 // 点一下「出！」按钮，得到这个位置的歌
 shuffleGetMusic.addEventListener('click', function() {
