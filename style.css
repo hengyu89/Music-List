@@ -56,8 +56,43 @@
     padding-bottom: 10px;
 }
 
-#other-word-list {
+#otherNine-word-list {
+    width: 33%; /* 让每个li元素占据父元素宽度的50% */
+    display: inline-block; /* 让li元素以块级元素的形式水平排列 */
+    box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+    padding-bottom: 10px;
+}
+
+#otherTen-word-list {
+    width: 32%; /* 让每个li元素占据父元素宽度的50% */
+    display: inline-block; /* 让li元素以块级元素的形式水平排列 */
+    box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+    padding-bottom: 10px;
+}
+
+#otherEleven-word-list {
     width: 50%; /* 让每个li元素占据父元素宽度的50% */
+    display: inline-block; /* 让li元素以块级元素的形式水平排列 */
+    box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+    padding-bottom: 10px;
+}
+
+#otherTwelve-word-list {
+    width: 50%; /* 让每个li元素占据父元素宽度的50% */
+    display: inline-block; /* 让li元素以块级元素的形式水平排列 */
+    box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+    padding-bottom: 10px;
+}
+
+#otherThirteen-word-list {
+    width: 50%; /* 让每个li元素占据父元素宽度的50% */
+    display: inline-block; /* 让li元素以块级元素的形式水平排列 */
+    box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+    padding-bottom: 10px;
+}
+
+#others-word-list {
+    width: 100%; /* 让每个li元素占据父元素宽度的50% */
     display: inline-block; /* 让li元素以块级元素的形式水平排列 */
     box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
     padding-bottom: 10px;
