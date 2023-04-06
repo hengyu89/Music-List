@@ -140,11 +140,24 @@ function getShuffleMusic() {
     // const shuffleInput = document.getElementById("shuffleID").placeholder = `输入一个数字(1~${listLength-1})`
 
     // 更新 list.js 文件中的歌曲列表
-    message.innerHTML = `你随机到了「${goalMusic}」，唱的开心嗷！`;
+    message.innerHTML = `你随机到了「${goalMusic}」，唱的开心嗷！<br><br>(对啦，这首歌你复制成功了，直接去直播间粘贴吧~)`;
+    event.preventDefault();
+    copyToClipboard(goalMusic);
 
     // 歌单放回localStorage
     localStorage.setItem('shufferList', JSON.stringify(randomMusicList));
     shuffleText.value = "";
+}
+
+function copyToClipboard(text) {
+  // 创建一个临时input元素，用于复制内容
+  const tempInput = document.createElement("input");
+  tempInput.value = `点歌 ${text}`;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy"); // 执行复制命令
+  document.body.removeChild(tempInput);
+  // alert('你已经复制成功：' + text);
 }
 
 
