@@ -7,7 +7,7 @@ var fiveCharList = document.querySelector('.five-char-list');
 var sixCharList = document.querySelector('.six-char-list');
 var sevenCharList = document.querySelector('.seven-char-list');
 var eightCharList = document.querySelector('.eight-char-list');
-
+console.log(songList);
 // 遍历歌曲列表，将歌曲按照长度分类添加到相应的列表中
 songList.forEach(function(song) {
     // 获取歌曲长度
