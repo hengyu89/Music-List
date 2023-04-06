@@ -1,16 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>My Music List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./public/style/index.css">
+
+  <title>☀哇啦的歌单☀</title>
 </head>
+
 <body>
-  <h1>My Music List</h1>
-  <input type="text" id="musicInput" placeholder="请输入歌曲名称">
-  <button onclick="addMusic()">添加歌曲</button>
-  <button onclick="removeMusic()">删除歌曲</button>
-  <button onclick="loadMusicList()">加载歌单</button>
-  <button onclick="downloadMusicList()">下载歌单</button>
+  <!-- Page margins are created using the container and container-fluid classes -->
+  <header class="container-fluid bg-dark text-light mb-5 p-3">
+    <div class="d-flex align-items-center">
+      <h1>哇啦幼儿园的传阅板</h1>
+      <p class="ml-auto">
+        哇啦哇啦稀里哗啦
+      </p>
+    </div>
+  </header>
+
+  <!-- 两列的布局 -->
+  <section class="container my-5">
+    <!-- 使用class = row 在这一块布局中创建“行“ -->
+    <div class="row">
+      <!-- Use col-* classes for different column sizes on different screens -->
+      <div class="col-12 col-md-8 col-xl-9">
+        <h3>Main Content</h3>
+        <h5>9/12 columns on large screens, 8/12 columns on medium screens, 12/12 (full-width) on small
+          screens</h5>
+        <input type="text" id="add-song-input" placeholder="请输入歌名">
+        <button id="add-song-button">添加歌曲</button> <br><br>
+        <button id="remove-song-button">删除歌曲</button>
+        <button id="shuffle-button">随机排序</button>
+        <button id="store-to-local">添加歌单到浏览器</button>
+        <button id="download-to-local">下载新歌单</button>
+        <div id="message"></div>
+        <ul id="song-list"></ul>
+        <p>ummmmm,开心就好！🎵</p>
+        <!-- <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores blanditiis temporibus facilis cumque
+          corporis illum, in dolorum? Ad, sed nulla adipisci vel repellendus facere hic rerum veritatis quia
+          reprehenderit velit?
+        </p> -->
+      </div>
+
+      <div class="col-12 col-md-4 col-xl-3">
+        <h3>最近的消息☀</h3>
+        <ul>
+          <li>哇啦做好立牌啦！「在船上」或者「上过船」的小朋友可以找哇啦要立牌（钥匙扣）哦~</li>
+          <li>上船的小朋友记得看私信~如果想上贼船（加群）的话记得和哇啦说哦！毕竟如果对方不想进群，哇啦还邀请的话都会很尴尬~</li>
+          <li>希望你今天也要开心呀❤</li>
+          <!-- <li>Spans 3 / 12 columns on large screens</li>
+          <li>Spans 4 / 12 columns on medium screens</li>
+          <li>Spans 12 / 12 (full-width) on smaller screens</li> -->
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 四列的布局, 这里是1字 - 4字 -->
+  <section class="container my-5 bg-dark text-light">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3">
+        <h3>壹字</h3>
+        <h5>希望未来的你</h5>
+        <br>
+        <ul class="one-char-list"></ul>
+        <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat perspiciatis, debitis a perferendis error
+          quaerat, nulla exercitationem minus, quam libero in ab obcaecati praesentium hic ipsum possimus voluptate modi
+          eius?</p> -->
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <h3>贰字</h3>
+        <h5>什么都不怕</h5>
+        <br>
+        <ul class="two-char-list"></ul>
+        <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat perspiciatis, debitis a perferendis error
+          quaerat, nulla exercitationem minus, quam libero in ab obcaecati praesentium hic ipsum possimus voluptate modi
+          eius?</p> -->
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <h3>仨字</h3>
+        <h5>哪怕寒冬和炎夏</h5>
+        <br>
+        <ul class="three-char-list"></ul>
+        <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat perspiciatis, debitis a perferendis error
+          quaerat, nulla exercitationem minus, quam libero in ab obcaecati praesentium hic ipsum possimus voluptate modi
+          eius?</p> -->
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <h3>肆字</h3>
+        <h5>也会有我的鼓励而开心</h5>
+        <br>
+        <ul class="four-char-list"></ul>
+        <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat perspiciatis, debitis a perferendis error
+          quaerat, nulla exercitationem minus, quam libero in ab obcaecati praesentium hic ipsum possimus voluptate modi
+          eius?</p> -->
+      </div>
+    </div>
+  </section>
+
+    <!-- 四列的布局, 这里是5字 - 8字 -->
+    <section class="container my-5 bg-dark text-light">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3">
+          <h3>伍字</h3>
+          <h5>不论如何</h5>
+          <br>
+          <ul class="five-char-list"></ul>
+          <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat perspiciatis, debitis a perferendis error
+            quaerat, nulla exercitationem minus, quam libero in ab obcaecati praesentium hic ipsum possimus voluptate modi
+            eius?</p> -->
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h3>陆字</h3>
+          <h5>看到这个的你</h5>
+          <br>
+          <ul class="six-char-list"></ul>
+          <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat perspiciatis, debitis a perferendis error
+            quaerat, nulla exercitationem minus, quam libero in ab obcaecati praesentium hic ipsum possimus voluptate modi
+            eius?</p> -->
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h3>柒字</h3>
+          <h5>一定要开心呀！</h5>
+          <br>
+          <ul class="seven-char-list"></ul>
+          <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat perspiciatis, debitis a perferendis error
+            quaerat, nulla exercitationem minus, quam libero in ab obcaecati praesentium hic ipsum possimus voluptate modi
+            eius?</p> -->
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h3>捌字</h3>
+          <h5>有效期：超久~</h5>
+          <br>
+          <ul class="eight-char-list"></ul>
+          <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat perspiciatis, debitis a perferendis error
+            quaerat, nulla exercitationem minus, quam libero in ab obcaecati praesentium hic ipsum possimus voluptate modi
+            eius?</p> -->
+        </div>
+      </div>
+    </section>
+
+  <!-- Centered one column layout -->
+  <!-- <section class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-8 col-lg-6">
+        <h3>Centered Content</h3>
+        <h5>6/12 columns on large, 8/12 columns on smaller screens, 12/12 on phone</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A, atque placeat magni fuga necessitatibus similique
+          unde eos autem laboriosam. Deleniti dolorum, provident minima autem debitis a soluta blanditiis reprehenderit
+          velit?
+        </p>
+      </div>
+    </div>
+  </section> -->
+
+
+  <!-- Two column layout with a grid in the left column -->
+  <!-- <section class="container my-5 bg-dark text-light">
+    <div class="row">
+      <div class="col-12 col-md-8 col-xl-9">
+        <h3>Main Content</h3>
+        <h5>9/12 columns on large screens, 8/12 columns on medium screens, 12/12 (full-width) on small
+          screens</h5>
+
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores blanditiis temporibus facilis cumque
+              corporis illum, in dolorum? Ad, sed nulla adipisci vel repellendus facere hic rerum veritatis quia
+              reprehenderit velit?
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores blanditiis temporibus facilis cumque
+              corporis illum, in dolorum? Ad, sed nulla adipisci vel repellendus facere hic rerum veritatis quia
+              reprehenderit velit?
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores blanditiis temporibus facilis cumque
+              corporis illum, in dolorum? Ad, sed nulla adipisci vel repellendus facere hic rerum veritatis quia
+              reprehenderit velit?
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores blanditiis temporibus facilis cumque
+              corporis illum, in dolorum? Ad, sed nulla adipisci vel repellendus facere hic rerum veritatis quia
+              reprehenderit velit?
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores blanditiis temporibus facilis cumque
+              corporis illum, in dolorum? Ad, sed nulla adipisci vel repellendus facere hic rerum veritatis quia
+              reprehenderit velit?
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores blanditiis temporibus facilis cumque
+              corporis illum, in dolorum? Ad, sed nulla adipisci vel repellendus facere hic rerum veritatis quia
+              reprehenderit velit?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 col-xl-3">
+        <h3>Sidebar Content</h3>
+        <ul>
+          <li>Spans 3 / 12 columns on large screens</li>
+          <li>Spans 4 / 12 columns on medium screens</li>
+          <li>Spans 12 / 12 (full-width) on smaller screens</li>
+        </ul>
+      </div>
+    </div>
+  </section> -->
+
+  <script src="list.js"></script>
+  <script src="list-display.js"></script>
   <script src="index.js"></script>
+
 </body>
+
 </html>
