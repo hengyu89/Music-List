@@ -61,7 +61,6 @@ function loadMusicList() {
       .then(data => {
         localStorage.setItem('MyMusicList', JSON.stringify(data));
         localStorage.setItem('shufferList', JSON.stringify(data));
-        alert('歌单加载成功！');
       })
       .catch(error => console.error(error));
 }
@@ -134,6 +133,7 @@ removeSongButton.addEventListener('click', function() {
 // 添加到localStorage按钮, 把本地文件json的歌添加到localStorage
 storeLocalButton.addEventListener('click', function() {
     loadMusicList();
+    alert('歌单加载成功！');
 });
 
 // 下载按钮, 从localStorage把歌单下载到本地

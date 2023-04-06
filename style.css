@@ -1,47 +1,47 @@
 #one-word-list {
-    width: 10%; /* 让每个li元素占据父元素宽度的50% */
+    width: 4%; /* 让每个li元素占据父元素宽度的50% */
     display: inline-block; /* 让li元素以块级元素的形式水平排列 */
     box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
   }
 
 #two-word-list {
-    width: 20%; /* 让每个li元素占据父元素宽度的50% */
+    width: 8%; /* 让每个li元素占据父元素宽度的50% */
     display: inline-block; /* 让li元素以块级元素的形式水平排列 */
     box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
   }
 
 #three-word-list {
-    width: 33%; /* 让每个li元素占据父元素宽度的50% */
+    width: 12%; /* 让每个li元素占据父元素宽度的50% */
     display: inline-block; /* 让li元素以块级元素的形式水平排列 */
     box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
 }
 
 #four-word-list {
-    width: 50%; /* 让每个li元素占据父元素宽度的50% */
+    width: 16%; /* 让每个li元素占据父元素宽度的50% */
     display: inline-block; /* 让li元素以块级元素的形式水平排列 */
     box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
 }
 
 #five-word-list {
-    width: 50%; /* 让每个li元素占据父元素宽度的50% */
+    width: 20%; /* 让每个li元素占据父元素宽度的50% */
     display: inline-block; /* 让li元素以块级元素的形式水平排列 */
     box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
 }
 
 #six-word-list {
-    width: 50%; /* 让每个li元素占据父元素宽度的50% */
+    width: 20%; /* 让每个li元素占据父元素宽度的50% */
     display: inline-block; /* 让li元素以块级元素的形式水平排列 */
     box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
 }
 
 #seven-word-list {
-    width: 100%; /* 让每个li元素占据父元素宽度的50% */
+    width: 25%; /* 让每个li元素占据父元素宽度的50% */
     display: inline-block; /* 让li元素以块级元素的形式水平排列 */
     box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
 }
 
 #eight-word-list {
-    width: 100%; /* 让每个li元素占据父元素宽度的50% */
+    width: 25%; /* 让每个li元素占据父元素宽度的50% */
     display: inline-block; /* 让li元素以块级元素的形式水平排列 */
     box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
 }
@@ -49,4 +49,31 @@
 #message {
     font-size: smaller;
     color: red;
+}
+
+@media (max-width: 768px) {
+    #one-word-list {
+        width: 10%;  /* 在屏幕宽度小于等于768px时，将宽度改为40% */
+    }
+    #two-word-list {
+        width: 13%;  /* 在屏幕宽度小于等于768px时，将宽度改为40% */
+    }
+    #three-word-list {
+        width: 18%;  /* 在屏幕宽度小于等于768px时，将宽度改为40% */
+    }
+    #four-word-list {
+        width: 22%;  /* 在屏幕宽度小于等于768px时，将宽度改为40% */
+    }
+    #five-word-list {
+        width: 30%;  /* 在屏幕宽度小于等于768px时，将宽度改为40% */
+    }
+    #six-word-list {
+        width: 50%;  /* 在屏幕宽度小于等于768px时，将宽度改为40% */
+    }
+    #seven-word-list {
+        width: 45%;  /* 在屏幕宽度小于等于768px时，将宽度改为40% */
+    }
+    #eight-word-list {
+        width: 43%;  /* 在屏幕宽度小于等于768px时，将宽度改为40% */
+    }
 }
