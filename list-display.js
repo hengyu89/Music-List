@@ -17,39 +17,39 @@ songList.forEach(function(song) {
     // 根据歌曲长度添加到相应的列表中
     switch (len) {
         case 1:
-            oneCharList.innerHTML += "<li id='one-word-list' class='word-list'>" + song + '</li>';
+            oneCharList.innerHTML += "<li id='one-word-list'>" + song + '</li>';
             break;
         case 2:
-            twoCharList.innerHTML += "<li id='two-word-list' class='word-list'>" + song + '</li>';
+            twoCharList.innerHTML += "<li id='two-word-list'>" + song + '</li>';
             // twoCharList.innerHTML += song + ' ';
             break;
         case 3:
-            threeCharList.innerHTML += "<li id='three-word-list' class='word-list'>" + song + '</li>';
+            threeCharList.innerHTML += "<li id='three-word-list'>" + song + '</li>';
             // threeCharList.innerHTML += song + ' ';
             break;
         case 4:
-            fourCharList.innerHTML += "<li id='four-word-list' class='word-list'>" + song + '</li>';
+            fourCharList.innerHTML += "<li id='four-word-list'>" + song + '</li>';
             // fourCharList.innerHTML += song + ' ';
             break;
         case 5:
-            fiveCharList.innerHTML += "<li id='five-word-list' class='word-list'>" + song + '</li>';
+            fiveCharList.innerHTML += "<li id='five-word-list'>" + song + '</li>';
             break;
         case 6:
-            sixCharList.innerHTML += "<li id='six-word-list' class='word-list'>" + song + '</li>';
+            sixCharList.innerHTML += "<li id='six-word-list'>" + song + '</li>';
             break;
         case 7:
-            sevenCharList.innerHTML += "<li id='seven-word-list' class='word-list'>" + song + '</li>';
+            sevenCharList.innerHTML += "<li id='seven-word-list'>" + song + '</li>';
             break;
         case 8:
-            eightCharList.innerHTML += "<li id='eight-word-list' class='word-list'>" + song + '</li>';
+            eightCharList.innerHTML += "<li id='eight-word-list'>" + song + '</li>';
             break;
         // default:
         //     console.log(song);
-        //     otherCharList.innerHTML += "<li id='other-word-list' class='word-list'>" + song + '</li>';
+        //     otherCharList.innerHTML += "<li id='other-word-list'>" + song + '</li>';
         //     break;
         default:
             console.log(song);
-            otherCharList.innerHTML += "<li id='other-word-list' class='word-list'>" + song + '</li>';
+            otherCharList.innerHTML += "<li id='other-word-list'>" + song + '</li>';
             break;
     }
 });
@@ -74,35 +74,35 @@ function refreshList() {
         // 根据歌曲长度添加到相应的列表中
         switch (len) {
             case 1:
-                oneCharList.innerHTML += "<li id='one-word-list' class='word-list' class='word-list'>" + song + '</li>';
+                oneCharList.innerHTML += "<li id='one-word-list'>" + song + '</li>';
                 break;
             case 2:
-                twoCharList.innerHTML += "<li id='two-word-list' class='word-list'>" + song + '</li>';
+                twoCharList.innerHTML += "<li id='two-word-list'>" + song + '</li>';
                 // twoCharList.innerHTML += song + ' ';
                 break;
             case 3:
-                threeCharList.innerHTML += "<li id='three-word-list' class='word-list'>" + song + '</li>';
+                threeCharList.innerHTML += "<li id='three-word-list'>" + song + '</li>';
                 // threeCharList.innerHTML += song + ' ';
                 break;
             case 4:
-                fourCharList.innerHTML += "<li id='four-word-list' class='word-list'>" + song + '</li>';
+                fourCharList.innerHTML += "<li id='four-word-list'>" + song + '</li>';
                 // fourCharList.innerHTML += song + ' ';
                 break;
             case 5:
-                fiveCharList.innerHTML += "<li id='five-word-list' class='word-list'>" + song + '</li>';
+                fiveCharList.innerHTML += "<li id='five-word-list'>" + song + '</li>';
                 break;
             case 6:
-                sixCharList.innerHTML += "<li id='six-word-list' class='word-list'>" + song + '</li>';
+                sixCharList.innerHTML += "<li id='six-word-list'>" + song + '</li>';
                 break;
             case 7:
-                sevenCharList.innerHTML += "<li id='seven-word-list' class='word-list'>" + song + '</li>';
+                sevenCharList.innerHTML += "<li id='seven-word-list'>" + song + '</li>';
                 break;
             case 8:
-                eightCharList.innerHTML += "<li id='eight-word-list' class='word-list'>" + song + '</li>';
+                eightCharList.innerHTML += "<li id='eight-word-list'>" + song + '</li>';
                 break;
             default:
                 console.log(song);
-                otherCharList.innerHTML += "<li id='other-word-list' class='word-list'>" + song + '</li>';
+                otherCharList.innerHTML += "<li id='other-word-list'>" + song + '</li>';
                 break;
         }
     });

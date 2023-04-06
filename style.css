@@ -1,66 +1,71 @@
-.word-list {
-    padding-bottom: 10px;
-    font-size: large;
-}
 
+/* 歌单的歌名排版（横向） */
 #one-word-list {
-    width: 4%; /* 让每个li元素占据父元素宽度的50% */
+    width: 10%; /* 让每个li元素占据父元素宽度的50% */
     display: inline-block; /* 让li元素以块级元素的形式水平排列 */
     box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+    padding-bottom: 10px;
   }
 
 #two-word-list {
-    width: 8%; /* 让每个li元素占据父元素宽度的50% */
+    width: 10%; /* 让每个li元素占据父元素宽度的50% */
     display: inline-block; /* 让li元素以块级元素的形式水平排列 */
     box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+    padding-bottom: 10px;
   }
 
 #three-word-list {
     width: 12%; /* 让每个li元素占据父元素宽度的50% */
     display: inline-block; /* 让li元素以块级元素的形式水平排列 */
     box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+    padding-bottom: 10px;
 }
 
 #four-word-list {
     width: 16%; /* 让每个li元素占据父元素宽度的50% */
     display: inline-block; /* 让li元素以块级元素的形式水平排列 */
     box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+    padding-bottom: 10px;
 }
 
 #five-word-list {
     width: 20%; /* 让每个li元素占据父元素宽度的50% */
     display: inline-block; /* 让li元素以块级元素的形式水平排列 */
     box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+    padding-bottom: 10px;
 }
 
 #six-word-list {
     width: 20%; /* 让每个li元素占据父元素宽度的50% */
     display: inline-block; /* 让li元素以块级元素的形式水平排列 */
     box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+    padding-bottom: 10px;
 }
 
 #seven-word-list {
     width: 25%; /* 让每个li元素占据父元素宽度的50% */
     display: inline-block; /* 让li元素以块级元素的形式水平排列 */
     box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+    padding-bottom: 10px;
 }
 
 #eight-word-list {
     width: 25%; /* 让每个li元素占据父元素宽度的50% */
     display: inline-block; /* 让li元素以块级元素的形式水平排列 */
     box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+    padding-bottom: 10px;
 }
 
 #other-word-list {
     width: 50%; /* 让每个li元素占据父元素宽度的50% */
     display: inline-block; /* 让li元素以块级元素的形式水平排列 */
     box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
+    padding-bottom: 10px;
 }
 
-
-#message {
-    font-size: smaller;
-    color: red;
+/* 歌单的歌名排版（纵向） */
+.hyu-padding {
+    padding-right: 550px;
 }
 
 @media (max-width: 768px) {
@@ -91,4 +96,18 @@
     #other-word-list {
         width: 30%;  /* 在屏幕宽度小于等于768px时，将宽度改为40% */
     }
+    .hyu-padding {
+        padding-right: 0px;
+    }
 }
+
+
+
+/* 随机歌曲文本框下面会弹出来的提示 */
+#message {
+    font-size: smaller;
+    color: red;
+}
+
+
+
