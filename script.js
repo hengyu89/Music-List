@@ -55,10 +55,11 @@ function removeMusic() {
 
 // 把本地文件json的歌添加到localStorage
 function loadMusicList() {
-    fetch('./list.json')
+    fetch('list.json')
       .then(response => response.json())
       .then(data => {
         localStorage.setItem('MyMusicList', JSON.stringify(data));
+        localStorage.setItem('shufferList', JSON.stringify(data));
         alert('歌单加载成功！');
       })
       .catch(error => console.error(error));
