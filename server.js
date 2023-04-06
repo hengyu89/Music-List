@@ -1,16 +1,21 @@
 const express = require('express');
-
-const app = express();
-const PORT = process.env.PORT || 3001;
 const path = require('path');
 
-// Serve images, css files, js files from the public directory
-// Allows us to reference files with their relative path
-// Example: http://localhost:3000/images/cat.jpg
+const app = express();
+const PORT = 3001;
+
 app.use(express.static('public'));
 
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, '/index.html')));
+app.get('/', (req, res) => res.send('Navigate to /send or /routes'));
+
+app.get('/send', (req, res) =>
+  res.sendFile(path.join(__dirname, 'public/send.html'))
+);
+
+app.get('/paths', (req, res) =>
+  res.sendFile(path.join(__dirname, 'public/paths.html'))
+);
 
 app.listen(PORT, () =>
-  console.log(`App listening at http://localhost:${PORT} 🚀`)
+  console.log(`Example app listening at http://localhost:${PORT}`)
 );
