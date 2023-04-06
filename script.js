@@ -152,3 +152,5 @@ addSongInput.addEventListener('keydown', function(event) {
 shuffleButton.addEventListener('click', function() {
     shuffleSongs();
 });
+
+loadMusicList();
