@@ -1,16 +1,16 @@
 
 /* 整体 */
-/* body {
+body {
     font-family: Arial, sans-serif;
-  } */
+  }
 
 /* 歌单以外 */
-#picture_wala {
+/* #picture_wala {
     display: block;
     max-width: 200px;
     height: auto;
     margin: 0 auto;
-}
+} */
 
 /* 歌单的歌名排版（横向） */
 #one-word-list {
