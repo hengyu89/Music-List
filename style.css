@@ -6,10 +6,10 @@
 
 /* 歌单以外 */
 #wala_pic1 {
-    display: block;
+    /* display: block; */
     max-width: 200px;
     height: auto;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 /* 歌单的歌名排版（横向） */
