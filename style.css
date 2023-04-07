@@ -3,7 +3,14 @@
 /* body {
     font-family: Arial, sans-serif;
   } */
-  
+
+/* 歌单以外 */
+#wala_pic1 {
+    display: block;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
 
 /* 歌单的歌名排版（横向） */
 #one-word-list {
