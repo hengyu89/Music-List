@@ -1,0 +1,156 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    background: #FEF2D8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fundo {
+    position: relative;
+    margin: 50px auto;
+    width: 550px;
+    height: 400px;
+  }
+  .raposa {
+    position: absolute;
+    top: 100px;
+    left: 220px;
+    z-index: 1;
+    animation: flutua .4s infinite alternate ease-in-out;
+  }
+  .orelha-1 {
+    position: absolute;
+    top: -25px;
+    left: 107px;
+    transform: rotate(47deg);
+    border-left: 42px solid transparent;
+    border-right: 42px solid transparent;
+    border-bottom: 75px solid #efc371;
+  }
+  .orelha-2 {
+    position: absolute;
+    top: -25px;
+    left: -81px;
+    transform: rotate(-47deg);
+    border-left: 43px solid transparent;
+    border-right: 43px solid transparent;
+    border-bottom: 76px solid #efc371;
+  }
+  .olho-1 {
+    position: absolute;
+    top: 75px;
+    left: 85px;
+    width: 15px;
+    height: 15px;
+    background: #555;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .olho-2 {
+    position: absolute;
+    top: 75px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    background: #555;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .f-1 {
+    position: absolute;
+    left: -10px;
+    width: 30px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid #efc371;
+  }
+  .f-2 {
+    position: absolute;
+    top: 6px;
+    left: 90px;
+    transform: rotate(27deg);
+    border-top: 50px solid transparent;
+    border-bottom: 65px solid transparent;
+    border-left: 60px solid #efc371;
+  }
+  .f-3 {
+    position: absolute;
+    top: 9px;
+    left: -41px;
+    transform: rotate(-27deg);
+    border-top: 50px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-right: 60px solid #efc371;
+  }
+  .f-4 {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 80px solid #efc371;
+  }
+  .f-5 {
+    position: absolute;
+    top: 70px;
+    left: -40px;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 81px solid #efc371;
+  }
+  .f-6 {
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 35px solid #555;
+    border-radius: 50%;
+    animation: voaa 1s infinite alternate ease-in-out;
+  }
+  .f-7 {
+    position: absolute;
+    top: 125px;
+    left: 35px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #E6C3C3;
+    z-index: 1;
+  }
+  .f-9 {
+    position: absolute;
+    top: 97px;
+    left: -30px;
+    width: 45px;
+    transform: rotate(25deg);
+    border-left: 55px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 60px solid #fff;
+    z-index: -9;
+  }
+  .f-10 {
+    position: absolute;
+    top: 97px;
+    left: 37px;
+    width: 45px;
+    transform: rotate(-25deg);
+    border-left: 5px solid transparent;
+    border-right: 55px solid transparent;
+    border-bottom: 60px solid #fff;
+    z-index: -9;
+  }
+  
+  @keyframes flutua {
+    0%   {transform: translateY(-2px)}
+    100% {transform: translateY(2px)}
+  }
+  
+  @keyframes voaa {
+    0%   {transform: translateY(2px)}
+    50% {transform: translateY(-2px)}
+  }
+  
