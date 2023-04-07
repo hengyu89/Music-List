@@ -142,23 +142,39 @@ function getShuffleMusic() {
     // 更新 list.js 文件中的歌曲列表
     message.innerHTML = `你随机到了「${goalMusic}」，唱的开心嗷！`;
     // message.innerHTML = `你随机到了「${goalMusic}」，唱的开心嗷！<br><br>(对啦，这首歌你复制成功了，直接去直播间粘贴吧~)`;
-    event.preventDefault();
-    copyToClipboard(goalMusic);
+    // event.preventDefault();
+    // copyToClipboard(goalMusic);
 
     // 歌单放回localStorage
     localStorage.setItem('shufferList', JSON.stringify(randomMusicList));
     shuffleText.value = "";
 }
 
-function copyToClipboard(text) {
-  // 创建一个临时input元素，用于复制内容
-  const tempInput = document.createElement("input");
-  tempInput.value = `点歌 ${text}`;
-  document.body.appendChild(tempInput);
-  tempInput.select();
-  document.execCommand("copy"); // 执行复制命令
-  document.body.removeChild(tempInput);
-  // alert('你已经复制成功：' + text);
+// function copyToClipboard(text) {
+//   // 创建一个临时input元素，用于复制内容
+//   const tempInput = document.createElement("input");
+//   tempInput.value = `点歌 ${text}`;
+//   document.body.appendChild(tempInput);
+//   tempInput.select();
+//   document.execCommand("copy"); // 执行复制命令
+//   document.body.removeChild(tempInput);
+//   // alert('你已经复制成功：' + text);
+// }
+
+function copyTheMusic() {
+  // 创建一个临时的textarea元素，设置文本内容并添加到页面中
+  var copyText = '啊哈'
+  const tempTextArea = document.createElement('textarea');
+  tempTextArea.value = copyText;
+  document.body.appendChild(tempTextArea);
+
+  // 选中文本内容并复制到剪贴板中
+  tempTextArea.select();
+  document.execCommand('copy');
+
+  // 删除临时元素并在控制台输出提示信息
+  document.body.removeChild(tempTextArea);
+  console.log('复制成功：' + copyText);
 }
 
 
@@ -197,6 +213,7 @@ function copyToClipboard(text) {
 // 点一下「出！」按钮，得到这个位置的歌
 shuffleGetMusic.addEventListener('click', function() {
   getShuffleMusic();
+  copyTheMusic();
   // console.log('试试')
 })
 // 点一下「打乱」按钮，顺序打乱
