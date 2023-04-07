@@ -144,8 +144,7 @@ function getShuffleMusic() {
     // message.innerHTML = `你随机到了「${goalMusic}」，唱的开心嗷！<br><br>(对啦，这首歌你复制成功了，直接去直播间粘贴吧~)`;
     // event.preventDefault();
     // copyToClipboard(goalMusic);
-    let copyTerm = `点歌 ${goalMusic}`
-    copyTheMusic(copyTerm);
+    copyTheMusic(goalMusic);
 
     // 歌单放回localStorage
     localStorage.setItem('shufferList', JSON.stringify(randomMusicList));
@@ -167,8 +166,8 @@ function copyTheMusic(copyText) {
   // 创建一个临时的textarea元素，设置文本内容并添加到页面中
   // var copyText = '呀哈'
   const tempTextArea = document.createElement('textarea');
-  // tempTextArea.value = `点歌 ${copyText}`;
-  tempTextArea.value = copyText;
+  tempTextArea.value = '点歌 ' + copyText;
+  // tempTextArea.value = copyText;
   document.body.appendChild(tempTextArea);
 
   // 选中文本内容并复制到剪贴板中
