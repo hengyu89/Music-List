@@ -144,7 +144,8 @@ function getShuffleMusic() {
     // message.innerHTML = `你随机到了「${goalMusic}」，唱的开心嗷！<br><br>(对啦，这首歌你复制成功了，直接去直播间粘贴吧~)`;
     // event.preventDefault();
     // copyToClipboard(goalMusic);
-    copyTheMusic(goalMusic);
+    let copyTerm = `点歌 ${goalMusic}`
+    copyTheMusic(copyTerm);
 
     // 歌单放回localStorage
     localStorage.setItem('shufferList', JSON.stringify(randomMusicList));
