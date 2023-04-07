@@ -150,16 +150,16 @@ function getShuffleMusic() {
     shuffleText.value = "";
 }
 
-// function copyToClipboard(text) {
-//   // 创建一个临时input元素，用于复制内容
-//   const tempInput = document.createElement("input");
-//   tempInput.value = `点歌 ${text}`;
-//   document.body.appendChild(tempInput);
-//   tempInput.select();
-//   document.execCommand("copy"); // 执行复制命令
-//   document.body.removeChild(tempInput);
-//   // alert('你已经复制成功：' + text);
-// }
+function copyToClipboard(text) {
+  // 创建一个临时input元素，用于复制内容
+  const tempInput = document.createElement("input");
+  tempInput.value = `点歌 ${text}`;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy"); // 执行复制命令
+  document.body.removeChild(tempInput);
+  // alert('你已经复制成功：' + text);
+}
 
 
 
