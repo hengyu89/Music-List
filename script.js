@@ -166,7 +166,8 @@ function copyTheMusic(copyText) {
   // 创建一个临时的textarea元素，设置文本内容并添加到页面中
   // var copyText = '呀哈'
   const tempTextArea = document.createElement('textarea');
-  tempTextArea.value = `点歌 ${copyText}`;
+  // tempTextArea.value = `点歌 ${copyText}`;
+  tempTextArea.value = copyText;
   document.body.appendChild(tempTextArea);
 
   // 选中文本内容并复制到剪贴板中
@@ -175,7 +176,7 @@ function copyTheMusic(copyText) {
 
   // 删除临时元素并在控制台输出提示信息
   document.body.removeChild(tempTextArea);
-  message.innerHTML += `<br><br>(好啦，这首歌复制好了，去直播间粘贴吧~)`;
+  // message.innerHTML += `<br><br>(好啦，这首歌复制好了，去直播间粘贴吧~)`;
   console.log('复制成功：' + copyText);
 }
 
