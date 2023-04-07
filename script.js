@@ -176,7 +176,8 @@ function copyTheMusic(copyText) {
 
   // 删除临时元素并在控制台输出提示信息
   document.body.removeChild(tempTextArea);
-  message.innerHTML += '<br><br>(这首歌复制好啦，快去直播间粘贴吧~)';
+  message.innerHTML += '<br><br>这首歌复制好啦，快去直播间粘贴吧~';
+  message.innerHTML += '<br>复制内容：「点歌 '+copyText+'」';
   console.log('复制成功：' + copyText);
 }
 
