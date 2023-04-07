@@ -1,8 +1,8 @@
 
 /* 整体 */
-body {
+/* body {
     font-family: Arial, sans-serif;
-  }
+  } */
 
 /* 歌单以外 */
 /* #picture_wala {
@@ -14,7 +14,7 @@ body {
 
 /* 歌单的歌名排版（横向） */
 #one-word-list {
-    color: aqua;
+    /* color: aqua; */
     width: 10%; /* 让每个li元素占据父元素宽度的50% */
     display: inline-block; /* 让li元素以块级元素的形式水平排列 */
     box-sizing: border-box; /* 让li元素宽度包括padding和border，不会超出指定宽度 */
