@@ -144,6 +144,7 @@ function getShuffleMusic() {
     // message.innerHTML = `你随机到了「${goalMusic}」，唱的开心嗷！<br><br>(对啦，这首歌你复制成功了，直接去直播间粘贴吧~)`;
     // event.preventDefault();
     // copyToClipboard(goalMusic);
+    copyTheMusic(goalMusic);
 
     // 歌单放回localStorage
     localStorage.setItem('shufferList', JSON.stringify(randomMusicList));
@@ -161,9 +162,9 @@ function getShuffleMusic() {
 //   // alert('你已经复制成功：' + text);
 // }
 
-function copyTheMusic() {
+function copyTheMusic(copyText) {
   // 创建一个临时的textarea元素，设置文本内容并添加到页面中
-  var copyText = '啊哈'
+  // var copyText = '啊哈'
   const tempTextArea = document.createElement('textarea');
   tempTextArea.value = copyText;
   document.body.appendChild(tempTextArea);
@@ -213,7 +214,6 @@ function copyTheMusic() {
 // 点一下「出！」按钮，得到这个位置的歌
 shuffleGetMusic.addEventListener('click', function() {
   getShuffleMusic();
-  copyTheMusic();
   // console.log('试试')
 })
 // 点一下「打乱」按钮，顺序打乱
