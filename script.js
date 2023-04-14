@@ -242,4 +242,13 @@ function resetMusicLength() {
   let musicList = JSON.parse(localStorage.getItem('shufferList')) || [];
   let shuffleInput = document.getElementById("shuffleID").placeholder = `输入一个数字(1~${musicList.length})`
 }
-resetMusicLength()
+resetMusicLength();
+
+// if (localStorage.getItem('hasReloaded')) {
+//   localStorage.removeItem('hasReloaded');
+// }
+
+if(!localStorage.getItem('hasReloaded')) {
+  localStorage.setItem('hasReloaded', true);
+  location.reload();
+}
