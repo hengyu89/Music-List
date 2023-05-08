@@ -139,7 +139,8 @@ var songList = [
     "即使全世界都嫌弃这首歌肉麻又俗气我还是要把它献给你",  
     "HAVE A NICE DAY",  
     "Bibbidi bobbidi boo",  
-    "Always Online"  ];
+    "Always Online",  
+    "Strangled Rose"  ];
 
 function addSong(song) {
     songList.push(song);
